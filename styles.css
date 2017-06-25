@@ -1,0 +1,77 @@
+html, body
+{
+  height: 100%;
+  width: 100%;
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+}
+
+#calc
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  min-width: 320px;
+}
+
+#screen
+{
+  overflow: hidden;
+  font-size: 3rem;
+  text-align: right;
+  color: white;
+  width: 100%;
+  min-height: 5rem;
+  background-color: #202020;
+  margin-bottom: 2rem;
+}
+
+.container-row
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0.75rem;
+}
+
+.btn
+{
+  border-radius: 1.5rem;
+  width: 14%;
+  font-weight: 600;
+  border-width: 2px;
+  padding: 0.5rem 0.5rem;
+}
+
+.bigger
+{
+  width: 42.5%;
+}
+
+#ce
+{
+  padding: 0.5rem 0.2rem;
+}
+
+@media screen and (max-device-width: 415px) {
+  html
+  {
+    font-size: 3.1rem;
+  }
+
+  #calc
+  {
+    width: 100%;
+    padding: 1rem;
+  }
+}
